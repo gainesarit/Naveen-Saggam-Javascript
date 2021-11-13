@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="nav bg-secondary">
+    <nav class="p">
+        Good Morning
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-head bg-secondary ">
+                    <div class="h2 text-center text-white">This is head</div>
+                </div>
+                <div class="card-body">
+                    <div class="h2">This is body</div>
+                    <div class="btn btn-outline-dark" id="bt">Click Here</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-head bg-primary ">
+                    <div class="h2 text-center text-white">This is head</div>
+                </div>
+                <div class="card-body">
+                    <div class="h2">This is body</div>
+                    <div class="h3" id="bn"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-head bg-primary ">
+                    <div class="h2 text-center text-white">This is head</div>
+                </div>
+                <div class="card-body">
+                    <div class="h2">This is body</div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="input">
+                        </div>
+                    </form>
+                    <div class="h2" id="output"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="">
+                    <div class="form-group">
+                        <select class="form-control" aria-label="Default select example" id="select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 id="sel"></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <input type="password" id="psw">
+                    <div class="btn btn-light" id="btn">
+                        show password
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h3>Select an Amount</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="range" class="custom-range" id="range1" min="100" max="5000">
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="text-dark">&#8377;
+                                <span id="msg"></span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-4">
+            <form action="">
+                <div class="form-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <textarea class="form-control" id="area" maxlength="100" rows="5"
+                                      placeholder="Type Your Message">
+
+                            </textarea>
+                        </div>
+                        <div class="card-footer">
+                            <h3 class="text-dark">The Characters Remaining: <span class="font-weight-bold"
+                                                                                  id="char">0</span>/100</h3>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-primary">
+                <div class="card-header bg-secondary">
+                    <div class="h3">
+                        Math Table
+                    </div>
+                    <div class="card-body bg-danger">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="multiplier">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <input type="range" class="custom-range" id="multiplicant" min="1" max="10"
+                                           value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body bg-secondary">
+                      <div class="col-md-4">
+                        <h1 class="display-3">
+                            <span class="badge badge-secondary" id="number1">1</span>
+                        </h1>
+                        <h1 class="display-3">
+                            <span class="badge badge-secondary" id="number2">1</span>
+                        </h1>
+                        <h1 class="display-3">
+                            <span class="badge badge-secondary" id="result">1</span>
+                        </h1>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 m-auto">
+            <div class="card">
+                <div class="card-header bg-secondary text-white text-center">
+                    <h3>Register Here</h3>
+                </div>
+                <div class="card-body">
+                   <form id="register-form">
+                       <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                           <div id="name_div"></div>
+                       </div>
+                       <div class="form-group">
+                           <input type="text" class="form-control" id="email" placeholder="Enter Your Email">
+                           <div id="email_div"></div>
+                       </div>
+                       <div class="form-group">
+                           <input type="number" class="form-control" id="phone"  placeholder="Enter Your Mobile No">
+                           <div id="phone_div"></div>
+                       </div>
+                       <div class="form-group">
+                           <input type="password" class="form-control" id="password" placeholder="Enter a Password">
+                           <div id="password_div"></div>
+                       </div>
+                       <div class="form-group">
+                           <input type="password" class="form-control" id="c_password" placeholder="Enter the Password Again">
+                           <div id="c_password_div"></div>
+                       </div>
+                       <div class="text-center">
+                           <input type="submit" value="Register" class="btn-btn-secondary">
+                       </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-warning text-white text-center">
+                    <h3>Task list</h3>
+                </div>
+                <div class="card-body">
+                    <form action=""id="task-form">
+                       <div class="form-group">
+                           <input type="text" class="form-control text-center" placeholder="Task Name" id="input-task">
+                       </div>
+                        <br/>
+                        <div>
+                            <input type="submit" value="Add Task" class="bg-warning" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <ul class="list-group" id="display">
+            </ul>
+        </div>
+    </div>
+</div>
+<br/>
+
+<script src="app.js"></script>
+</body>
+</html>
